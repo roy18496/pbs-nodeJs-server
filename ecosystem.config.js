@@ -6,7 +6,7 @@ module.exports = {
   deploy: {
     production: {
       user: 'bitnami',
-      host: '35.172.210.51',
+      host: '35.169.9.123',
       key: 'C:/Users/tue19/.ssh/server.pem',
       ref: 'origin/master',
       repo: 'git@github.com:tuetranduy/pbs-nodeJs-server.git',
