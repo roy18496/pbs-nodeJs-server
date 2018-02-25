@@ -1,7 +1,7 @@
 module.exports = {
   apps: [{
     name: 'pbs server',
-    script: './pbs-nodeJs-server/index.js'
+    script: './index.js'
   }],
   deploy: {
     production: {
