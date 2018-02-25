@@ -1,6 +1,12 @@
-const express = require('express')
-const app = express()
+var express = require("express");
+var app = express();
+var server = require("http").createServer(app);
+var io = require("socket.io").listen(server);
+var fs = require("fs");
+server.listen(process.env.PORT || 3000, ()=> console.log("server is up"));
 
-app.use(express.static("app"))
-
-app.listen(3000, () => console.log('Server running on port 3000'))
+io.sockets.on('connection', function (socket) {
+	
+    console.log("NOTICE: New user connected");
+    
+  }); 
