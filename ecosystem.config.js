@@ -7,7 +7,7 @@ module.exports = {
     production: {
       user: 'bitnami',
       host: '35.169.9.123',
-      key: 'C:/Users/tue19/Desktop/NodeJS-server.ppk',
+      key: 'C:/Users/tue19/.ssh/server.pem',
       ref: 'origin/master',
       repo: 'git@github.com:tuetranduy/pbs-nodeJs-server.git',
       path: '~/server',
