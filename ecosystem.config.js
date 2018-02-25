@@ -1,6 +1,6 @@
 module.exports = {
   apps: [{
-    name: 'pbs',
+    name: 'index',
     script: './index.js'
   }],
   deploy: {
