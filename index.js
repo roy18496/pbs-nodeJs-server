@@ -8,7 +8,7 @@ server.listen(process.env.PORT || 3000, ()=> console.log("server is up"));
 io.sockets.on('connection', function (socket) {
 	
     console.log("NOTICE: New user connected");
-    socket.on("new message", function(data){
+    socket.on("SEND_BARCODE", function(data){
         console.log(data);
     })
     
