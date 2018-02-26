@@ -8,9 +8,8 @@ server.listen(process.env.PORT || 3000, ()=> console.log("server is up"));
 io.sockets.on('connection', function (socket) {
 	
     console.log("NOTICE: New user connected");
-    socket.on("CLIENT_SEND_IMAGE", function(data){
+    socket.on("new message", function(data){
         console.log(data);
-        fs.writeFile("test.png", data);
     })
     
   }); 
