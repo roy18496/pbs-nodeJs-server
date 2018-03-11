@@ -9,11 +9,9 @@
     "socketio-file-upload": "^0.4.4"
   },
   "devDependencies": {
-    "pm2": "^2.10.1"
   },
+  
   "scripts": {
-    "restart": "pm2 startOrRestart ecosystem.config.js",
-    "deploy": "pm2 deploy ecosystem.config.js production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
