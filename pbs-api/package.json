@@ -16,7 +16,10 @@
     "bluebird": "^3.4.6",
     "bookshelf": "0.11.1",
     "boom": "7.1.1",
+    "body-parser": "^1.18.2",
     "express": "^4.16.2",
+    "knex": "^0.14.4",
+    "mysql": "^2.15.0",
     "socket.io": "*",
     "socketio-file-upload": "^0.4.4",
     "node-uuid": "1.4.8",
@@ -30,7 +33,6 @@
     "hapi-auth-jwt2": "7.3.0",
     "crypto": "1.0.1",
     "hapi": "16.5.2",
-    "knex": "0.13.0",
     "lodash": "^4.10.0",
     "moment": "^2.20.1"
   },
