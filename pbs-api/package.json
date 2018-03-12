@@ -3,14 +3,43 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "knex migrate:latest",
+    "start": "node api.js"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "babel-core": "6.26.0",
+    "babel-preset-es2015": "6.24.1",
+    "bluebird": "^3.4.6",
+    "bookshelf": "0.11.1",
+    "boom": "7.1.1",
     "express": "^4.16.2",
     "socket.io": "*",
-    "socketio-file-upload": "^0.4.4"
+    "socketio-file-upload": "^0.4.4",
+    "node-uuid": "1.4.8",
+    "nodemailer": "^4.4.0",
+    "path": "0.12.7",
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0",
+    "save": "^2.3.2",
+    "underscore": "^1.8.3",
+    "jshint": "2.9.5",
+    "hapi-auth-jwt2": "7.3.0",
+    "crypto": "1.0.1",
+    "hapi": "16.5.2",
+    "knex": "0.13.0",
+    "lodash": "^4.10.0",
+    "moment": "^2.20.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "8.0.2",
+    "eslint": "4.11.0",
+    "eslint-config-walmart": "1.2.4",
+    "eslint-plugin-filenames": "1.2.0",
+    "nodemon": "^1.12.1",
+    "xclap": "0.2.17"
   }
 }
