@@ -1,6 +1,6 @@
 export default {
 	production: {
-		host: "pbs.cbyy5ijglgrc.us-east-1.rds.amazonaws.com",
+		host: "52.201.100.209",
 		user: "pbs",
 		password: "12345678",
 		database: "pbs"
