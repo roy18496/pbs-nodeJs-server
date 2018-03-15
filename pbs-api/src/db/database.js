@@ -1,13 +1,14 @@
 import Bookshelf from "bookshelf";
 import knex from "knex";
+import config from "../config/config"
 
 const knexConfig = knex({
     client: "mysql",
     connection: {
-        host: "127.0.0.1",
-        user: "root",
-        password: "root",
-        database: "pbs_dev",
+        host: config.database.host,
+        user: config.database.user,
+        password: config.database.password,
+        database: config.database.database,
         charset: "utf8"
     },
     pool: {
