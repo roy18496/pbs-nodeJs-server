@@ -2,6 +2,7 @@
 
 import hapi from "hapi";
 import router from "./server/router.js";
+import config from "./config/config";
 import {
     serverConstant
 } from "./server/constant";
@@ -21,8 +22,8 @@ const validate = (decoded, request, callback) => {
 };
 
 server.connection({
-    host: "localhost",
-    port: "3001",
+    host: config.application.host,
+    port: config.application.port,
     routes: { cors: true } // enable cors
 });
 
@@ -33,7 +34,7 @@ server.register(require("hapi-auth-jwt2"), (err) => {
     }
 
     server.auth.strategy("jwt", "jwt", {
-        key: "lF7ioZHOa4iafmUfhcWwkUFRb7P7F09K",
+        key: config.application.secretKey,
         validateFunc: validate,
         verifyOptions: {
             algorithms: ["HS256"]
